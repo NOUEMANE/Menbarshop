@@ -1,0 +1,241 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fcfbfb;
+}
+
+header {
+    background: #189eb3; /* Turquoise color */
+    color: #f9f8f8;
+    padding: 40px 0;
+    text-align:center;
+    position: relative;
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+nav {
+    margin: 20px 0; /* Spacing for navigation */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Horizontal layout */
+    justify-content:space-between; /* Centered alignment */
+}
+
+nav ul li {
+    margin: 0 15px; /* Space between items */
+}
+
+nav ul li a {
+    color: rgb(247, 244, 244);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5em; /* Increased font size for links */
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fffa65; /* Change link color on hover */
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2.2em; /* Increased font size */
+    color: #13615a; /* Turquoise color */
+    text-transform: uppercase; /* Uppercase letters */
+    letter-spacing: 1px; /* Slight letter spacing */
+    animation: bounce 0.5s ease; /* Bounce animation */
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery div {
+    text-align: center;
+    border: 2px solid #1da99b; /* Border color matching section names */
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.gallery div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.gallery img {
+    width: 100%;
+    height: 280px;
+    border-bottom: 2px solid #33aca0; /* Matching border under images */
+}
+
+textarea {
+    width: 90%;
+    margin: 10px 0;
+    padding: 5px;
+}
+
+button {
+    margin-top: 5px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #3bbfeb; /* Bright sky blue */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Added transform transition */
+}
+
+button:hover {
+    background-color: #0080ff; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.whatsapp-button {
+    margin: 10px;
+    display: inline-block;
+    background: #23f36f;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.2s; /* Added transform transition */
+}
+
+.whatsapp-button:hover {
+
+    background: #1DA851;
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: white;
+}
+
+.comments-section {
+    margin-top: 10px;
+}
+
+.comment {
+    margin: 5px 0;
+    padding: 5px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.comment button {
+    margin-left: 10px;
+    padding: 3px 6px;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+.PRICE{
+    color: red;
+}
+.site-header {
+    background-image: url('./1730283018277.jpg'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire header */
+    background-position: center; /* Center the image */
+    padding: 20px; /* Add some padding */
+    color: rgb(251, 255, 255); /* Text color */
+    text-align: center; /* Center text */
+}
+
+.site-header h1 {
+    font-size: 3.5em; /* Larger font size for the title */
+    margin: 0; /* Remove default margin */
+}
+
+.site-header nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.site-header nav ul li {
+    display: inline; /* Horizontal list */
+    margin: 0 15px; /* Spacing between items */
+}
+
+.site-header nav ul li a {
+    color: rgb(251, 255, 255); /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.site-header nav ul li a:hover {
+    color: #00bfff; /* Change color on hover */
+}
+.site-header {
+    position: relative; /* Position for overlay */
+}
+
+.site-header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 0; /* Behind other content */
+}
+
+.site-header h1,
+.site-header nav {
+    position: relative; /* Ensure content is above the overlay */
+    z-index: 1; /* Above overlay */
+}
