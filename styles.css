@@ -239,3 +239,27 @@ footer {
     position: relative; /* Ensure content is above the overlay */
     z-index: 1; /* Above overlay */
 }
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+    justify-content: space-around; /* Distribute space between images */
+}
+
+.gallery div {
+    flex: 1 1 200px; /* Allow flex items to grow and shrink, minimum width of 200px */
+    margin: 10px; /* Space between images */
+    max-width: 300px; /* Limit max width */
+}
+
+.gallery img {
+    width: 100%; /* Make image take the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners for images */
+}
+@media (max-width: 600px) {
+    .gallery div {
+        flex: 1 1 100%; /* Full width on small screens */
+        max-width: none; /* Remove max-width constraint */
+    }
+}
+
