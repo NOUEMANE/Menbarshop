@@ -262,4 +262,21 @@ footer {
         max-width: none; /* Remove max-width constraint */
     }
 }
+.gallery div {
+    margin-bottom: 20px; /* Ensure there is space between items */
+}
+
+.comments-section {
+    margin-top: 10px; /* Space above the comments section */
+}
+
+textarea {
+    width: 100%; /* Full width for the textarea */
+    margin-top: 10px; /* Space above the textarea */
+}
+
+button {
+    margin-top: 5px; /* Space above buttons */
+}
+
 
