@@ -1,282 +1,219 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+/* Body Styling */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fcfbfb;
-}
-
-header {
-    background: #189eb3; /* Turquoise color */
-    color: #f9f8f8;
-    padding: 40px 0;
-    text-align:center;
-    position: relative;
-    animation: slideIn 1s ease-in-out;
-}
-
-@keyframes slideIn {
-    from {
-        transform: translateY(-50px);
-        opacity: 0;
+  body {
+    body {
+      font-family: 'Scheherazade New', serif;
+      font-weight: bolder;
     }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+    
+  }
+  
+
+  color: #333;
+  background-color: #f4f4f9;
 }
 
-header h1 {
-    font-size: 2.5em;
-    margin: 0;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    animation: fadeIn 1s ease-in-out;
+/* Header Styling */
+.header {
+  height: 35vh; /* Shorter header */
+  background-image: url('./1730283018277.jpg'); /* Replace with your clothing image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  text-align: center;
+  color: #fff;
+ 
+  position: relative;
+  padding: 0 0rem;
+  
+  
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+.header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
 }
 
-nav {
-    margin: 20px 0; /* Spacing for navigation */
+.header-content {
+  position: relative;
+  z-index: 1;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex; /* Horizontal layout */
-    justify-content:space-between; /* Centered alignment */
+/* Title Styling with 3D Effect */
+.title {
+
+  font-size: 3.2rem;
+  text-transform: uppercase;
+
+  color: #f8f7fa; /* Primary color */
+  text-shadow: 
+    2px 2px 4px #fa0a7a, /* Secondary shadow color */
+    -2px -2px 4px #423eb1; /* Additional depth using primary */
+      
+  transition: text-shadow 0.3s;
 }
 
-nav ul li {
-    margin: 0 15px; /* Space between items */
+
+/* Navigation Menu Styling */
+.header-nav {
+  margin-top: 1rem;
 }
 
-nav ul li a {
-    color: rgb(247, 244, 244);
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.5em; /* Increased font size for links */
-    transition: color 0.3s;
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content:space-around;
+  padding: 0;
+  
 }
 
-nav ul li a:hover {
-    color: #fffa65; /* Change link color on hover */
+.nav-link{
+  font-size: 2rem;
+  font-size: x-large;
+  color: #f7faf8;
+  text-shadow: 
+  2px 2px 4px #fa0a7a, /* Secondary shadow color */
+  -2px -2px 4px #423eb1; /* Additional depth using primary */
+
+  transition: transform 0.2s, color 0.2s;
+}
+.section-title {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  margin: 20px;
+  padding: 10px 20px;
+  background: linear-gradient(145deg,  #605dc1, #dc2f80); /* 3D-like gradient */
+  border: none;
+  border-radius: 12px; /* Smooth rounded edges */
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3), -4px -4px 8px rgba(255, 255, 255, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
 }
 
-h2 {
-    text-align: center;
-    margin: 20px 0;
-    font-size: 2.2em; /* Increased font size */
-    color: #13615a; /* Turquoise color */
-    text-transform: uppercase; /* Uppercase letters */
-    letter-spacing: 1px; /* Slight letter spacing */
-    animation: bounce 0.5s ease; /* Bounce animation */
+.section-title:hover {
+  transform: translateY(-3px); /* Subtle hover lift effect */
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3), -6px -6px 12px rgba(255, 255, 255, 0.2);
 }
 
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
+.section-title:active {
+  transform: translateY(1px); /* Pressed effect */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -2px -2px 4px rgba(255, 255, 255, 0.1);
 }
 
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 10px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+.nav-link:hover {
+  transform: translateY(-3px);
+  color: #e5e217;
 }
 
-.gallery div {
-    text-align: center;
-    border: 2px solid #1da99b; /* Border color matching section names */
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.2s;
+
+
+
+
+.d-block {
+  min-width: 100%;
+  text-align: center;
+  padding: 10%;
+  border-radius: 5px;
 }
 
-.gallery div:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
-}
 
-.gallery img {
-    width: 100%;
-    height: 280px;
-    border-bottom: 2px solid #33aca0; /* Matching border under images */
-}
 
-textarea {
-    width: 90%;
-    margin: 10px 0;
-    padding: 5px;
-}
-
-button {
-    margin-top: 5px;
-    padding: 5px 10px;
-    border: none;
-    background-color: #3bbfeb; /* Bright sky blue */
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s; /* Added transform transition */
-}
-
-button:hover {
-    background-color: #0080ff; /* Darker blue on hover */
-    transform: translateY(-2px); /* Slight lift on hover */
-}
 
 .whatsapp-button {
-    margin: 10px;
-    display: inline-block;
-    background: #23f36f;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background 0.3s, transform 0.2s; /* Added transform transition */
+  display: block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #25d366;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
 }
 
 .whatsapp-button:hover {
-
-    background: #1DA851;
-    transform: translateY(-2px); /* Slight lift on hover */
+  background-color: #1ebd59;
 }
 
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background: #333;
-    color: white;
+/* Image Gallery Styling for Other Sections */
+.image-gallery {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.comments-section {
-    margin-top: 10px;
+.item {
+  width: 100%;
+  max-width: 250px;
+  text-align: center;
 }
 
-.comment {
-    margin: 5px 0;
-    padding: 5px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+.item img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.comment button {
-    margin-left: 10px;
-    padding: 3px 6px;
-    font-size: 0.9em;
-    cursor: pointer;
-}
-.PRICE{
-    color: red;
-}
-.site-header {
-    background-image: url('./1730283018277.jpg'); /* Replace with your image path */
-    background-size: cover; /* Cover the entire header */
-    background-position: center; /* Center the image */
-    padding: 20px; /* Add some padding */
-    color: rgb(251, 255, 255); /* Text color */
-    text-align: center; /* Center text */
+/* Center carousel on larger screens */
+.carousel-container {
+  max-width: 400px; /* Adjust to desired width, e.g., the width of a mobile screen */
+  margin: 0 auto; /* Center the carousel */
 }
 
-.site-header h1 {
-    font-size: 3.5em; /* Larger font size for the title */
-    margin: 0; /* Remove default margin */
-}
-
-.site-header nav ul {
-    list-style: none; /* Remove bullet points */
-    padding: 0; /* Remove padding */
-}
-
-.site-header nav ul li {
-    display: inline; /* Horizontal list */
-    margin: 0 15px; /* Spacing between items */
-}
-
-.site-header nav ul li a {
-    color: rgb(251, 255, 255); /* Link color */
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Bold text */
-    transition: color 0.3s; /* Smooth transition for hover effect */
-}
-
-.site-header nav ul li a:hover {
-    color: #00bfff; /* Change color on hover */
-}
-.site-header {
-    position: relative; /* Position for overlay */
-}
-
-.site-header::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
-    z-index: 0; /* Behind other content */
-}
-
-.site-header h1,
-.site-header nav {
-    position: relative; /* Ensure content is above the overlay */
-    z-index: 1; /* Above overlay */
-}
-.gallery {
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
-    justify-content: space-around; /* Distribute space between images */
-}
-
-.gallery div {
-    flex: 1 1 200px; /* Allow flex items to grow and shrink, minimum width of 200px */
-    margin: 10px; /* Space between images */
-    max-width: 300px; /* Limit max width */
-}
-
-.gallery img {
-    width: 100%; /* Make image take the full width of its container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Optional: rounded corners for images */
-}
-@media (max-width: 600px) {
-    .gallery div {
-        flex: 1 1 100%; /* Full width on small screens */
-        max-width: none; /* Remove max-width constraint */
-    }
-}
-.gallery div {
-    margin-bottom: 20px; /* Ensure there is space between items */
-}
-
-.comments-section {
-    margin-top: 10px; /* Space above the comments section */
-}
-
-textarea {
-    width: 100%; /* Full width for the textarea */
-    margin-top: 10px; /* Space above the textarea */
-}
-
-button {
-    margin-top: 5px; /* Space above buttons */
+/* Control height of the carousel items */
+.carousel-item img {
+  width: 100%; /* Make the image fit within the carousel container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure image fits nicely */
+  
 }
 
 
+/* Media Queries for Responsiveness */
+@media (max-width: 300px) {
+  .site-header {
+      padding: 20px;
+  }
+
+  .main-gallery {
+      flex-direction: column; /* Stack gallery sections vertically */
+      align-items: center; /* Center items */
+  }
+
+  .gallery-section {
+      width: 90%; /* Use more width on mobile */
+  }
+
+  .site-header h1 {
+      font-size: 45px; /* Adjust font size for mobile */
+  }
+}
+
+.separator {
+  width:90%; /* Adjust the width of the line */
+  height: 10px; /* Adjust the thickness of the line */
+  background: linear-gradient(to right, #1009de, #f00505); /* Gradient color */
+  margin: 20px auto; /* Center the line */
+  border: none; /* Remove default borders */
+  border-radius: 10px; /* Rounded edges for the line */
+}
