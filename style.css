@@ -24,7 +24,7 @@ body {
 /* Header Styling */
 .header {
   height: 35vh; /* Shorter header */
-  
+  background-image: url(./1730283018277.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
