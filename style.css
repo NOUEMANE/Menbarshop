@@ -216,11 +216,11 @@ body {
   }
 
   .gallery-section {
-      width: 90%; /* Use more width on mobile */
+      width: 95%; /* Use more width on mobile */
   }
 
   .site-header h1 {
-      font-size: 45px; /* Adjust font size for mobile */
+      font-size: 55px; /* Adjust font size for mobile */
   }
 }
 
