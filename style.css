@@ -1,0 +1,421 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+/* Body Styling */
+body {
+  body {
+    body {
+      font-family: 'Scheherazade New', serif;
+      font-weight: bolder;
+    }
+    
+  }
+  
+
+  color: #121111;
+  background-color: #f4f4f9;
+}
+
+/* Header Styling */
+.header {
+  height: 23vh; /* Shorter header */
+  
+  background-size: cover;
+  background-position: center;
+  display: none;
+  align-items:center;
+  justify-content:center;
+  text-align: center;
+  color: #fff;
+ 
+  position: relative;
+  padding: 0 0rem;
+  
+}
+
+
+.header-content {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+
+/* Navigation Menu Styling */
+.header-nav {
+  margin-top: 1rem;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content:space-around;
+  padding: 0;
+  
+}
+
+.h3{
+
+  font-size: large;
+  color: #eff3f5;
+  text-shadow: 
+  2px 2px 4px #fa0a7a, /* Secondary shadow color */
+  -2px -2px 4px #423eb1; /* Additional depth using primary */
+  text-align:center;
+  transition: transform 0.2s, color 0.2s;
+  padding: 20px;
+
+  text-decoration: underline;
+  
+}
+
+.section-title {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  margin: 10px;
+  margin-top: 30;
+  padding: 10px 20px;
+  background: linear-gradient(145deg,  #605dc1, #dc2f80); /* 3D-like gradient */
+  border: none;
+  border-radius: 12px; /* Smooth rounded edges */
+  box-shadow: 4px 4px 8px rgba(80, 120, 207, 0.3), -4px -4px 8px rgba(255, 255, 255, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.section-title:hover {
+  transform: translateY(-3px); /* Subtle hover lift effect */
+  box-shadow: 6px 6px 12px rgba(117, 131, 241, 0.3), -6px -6px 12px rgba(255, 255, 255, 0.2);
+}
+
+.section-title:active {
+  transform: translateY(1px); /* Pressed effect */
+  box-shadow: 2px 2px 4px rgba(77, 111, 184, 0.5), -2px -2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.nav-link {
+  font-size: 1rem; /* Large text size */
+  color: #f7faf8; /* Light font color */
+  text-shadow: 
+    2px 2px 4px #fa0a7a, /* Secondary shadow color */
+    -2px -2px 4px #423eb1; /* Additional depth using primary */;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1px 12px;
+  background-color: rgba(168, 203, 236, 0.8); /* Semi-transparent blue */
+  border-radius: 8px; /* Rounded corners for the button */
+  position: relative;
+  box-shadow: 0 6px rgba(154, 7, 88, 0.7); /* 3D shadow effect with transparency */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.nav-link:hover {
+  background-color: rgba(93, 119, 203, 0.7); /* Slightly darker transparent blue */
+  box-shadow: 0 4px rgba(104, 54, 89, 0.8); /* Reduced shadow depth */
+  transform: translateY(-2px); /* Slight hover lift */
+}
+
+/* Active (pressed) effect */
+.nav-link:active {
+  top: 2px;
+  box-shadow: 0 2px rgba(0, 86, 179, 0.3); /* Minimal shadow for pressed state */
+  background-color: rgba(0, 123, 255, 0.7); /* Darker transparent blue */
+}
+
+/* Icon spacing */
+.nav-link .icon {
+  margin-right: 8px;
+  font-size: 24px; /* Slightly larger icons */
+}
+
+
+/* Sticky Navigation Bar */
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-image: url(./bbbbb.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 10px;
+  display:inline-block;
+  align-items:center;
+  justify-content:space-between;
+  z-index: 1000;
+}
+
+.sticky-nav .nav-link,
+.sticky-nav  {
+  color: #fff;
+  font-size: 1rem;
+  padding: 5px 10px;
+}
+.home-container{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.home-container:hover{
+
+    transform: translateY(-2px); /* Slight hover lift */ 
+}
+
+.home-container:hover {
+  transform: translateY(-2px); /* Slight hover lift */
+}
+
+.home-button {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #f8f7fa; /* Primary color */
+  text-shadow: 
+    2px 2px 4px #fa0a7a, /* Secondary shadow color */
+    -2px -2px 4px #423eb1; /* Additional depth using primary */;
+  display: inline-flex; /* Align text and icon inline */
+  align-items: center; /* Center align icon and text */
+  gap: 10px; /* Space between text and icon */
+  transition: all 0.3s ease; /* Smooth hover effects */
+}
+
+.home-button i {
+  font-size: 2rem; /* Slightly larger icon */
+  color: #f8f7fa; /* Match text color */
+  text-shadow: 
+    2px 2px 4px #fa0a7a, /* Secondary shadow color */
+    -2px -2px 4px #423eb1; /* Additional depth */;
+  transition: transform 0.3s, text-shadow 0.3s ease-in-out; /* Add smooth 3D effect */
+}
+
+.home-button:hover i {
+  transform: scale(1.2); /* Enlarge the icon slightly */
+  text-shadow: 
+    3px 3px 6px #fa0a7a, /* Intensify shadow on hover */
+    -3px -3px 6px #423eb1; /* Additional depth */;
+}
+
+#new-arrivals{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30vh; /* Dynamic gap based on screen height */
+}
+/* Sections */
+.section {
+  margin-top: 60px; /* Offset for sticky nav */
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+/* Collapsible Gallery */
+.image-gallery {
+  margin-top: 20px;
+}
+
+
+.gallery-images.hidden {
+  display: none;
+}
+
+.gallery-images img {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  justify-content:center; /* Distribute items evenly with space between */
+  width: 100%; /* Ensure the gallery takes up at least 95% of the screen width */
+  margin: 0 auto; /* Center the gallery horizontally */
+  gap: 10px; /* Add spacing between images */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+/* Ensure each packet-container stacks its content */
+.packet-container {
+  display: flex;
+  flex-direction: column; /* Stack the image-packet above the gallery */
+  align-items: center; /* Center content horizontally */
+  margin-bottom: 20px; /* Space between containers */
+}
+
+/* Ensure gallery-images take full width and are hidden initially */
+.gallery-images {
+  width: 100%; /* Make gallery take full width of its container */
+  display: none; /* Default to hidden */
+  flex-wrap: wrap; /* Arrange images in rows if necessary */
+  gap: 10px; /* Space between images */
+  justify-content: center; /* Center align images */
+}
+
+/* Show gallery-images when not hidden */
+.gallery-images:not(.hidden) {
+  display: flex;
+}
+
+/* Optional styling for individual gallery images */
+.gallery-images img {
+ 
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.gallery-images img:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+.d-block {
+  min-width: 100%;
+  text-align: center;
+  padding: 10%;
+  border-radius: 5px;
+}
+
+
+/* Container for the Image Packet */
+.image-packet {
+  position: relative;
+  width: 150px; /* Adjust to your image size */
+  height: 100px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+/* Front Image Styling */
+.front-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 5; /* Top layer */
+  border-radius: 10px; /* Optional rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  cursor: pointer;
+}
+
+/* Stacked Images Styling */
+.stacked-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px; /* Same as the front image */
+  opacity: 0.8; /* Slight transparency for depth effect */
+  transform: scale(0.95); /* Slightly smaller than the front image */
+  z-index: 1; /* Start behind the front image */
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for layers */
+}
+
+/* Individual Offsets for Stacking */
+.stacked-image-1 {
+  top: 5px;
+  left: 5px;
+  z-index: 2;
+}
+
+.stacked-image-2 {
+  top: 10px;
+  left: 10px;
+  z-index: 3;
+}
+
+.stacked-image-3 {
+  top: 15px;
+  left: 15px;
+  z-index: 4;
+}
+
+/* Optional Hover Effect */
+.image-packet:hover .front-image {
+  transform: scale(1.05); /* Enlarge the front image slightly */
+  transition: transform 0.3s ease;
+}
+
+.image-packet:hover .stacked-image {
+  transform: scale(1); /* Slightly enlarge the stacked images */
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-button {
+  display: block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #25d366;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.whatsapp-button:hover {
+  background-color: #1ebd59;
+}
+
+/* Image Gallery Styling for Other Sections */
+
+.item {
+  width: 100%;
+  max-width: 250px;
+  text-align: center;
+}
+
+.item img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  justify-content:center; /* Distribute items evenly with space between */
+  width: 98%; /* Ensure the gallery takes up at least 95% of the screen width */
+  margin: 0 auto; /* Center the gallery horizontally */
+  gap: 10px; /* Add spacing between images */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
+/* Center carousel on larger screens */
+.carousel-container {
+  max-width: 400px; /* Adjust to desired width, e.g., the width of a mobile screen */
+  margin: 0 auto; /* Center the carousel */
+}
+
+/* Control height of the carousel items */
+.carousel-item img {
+  width: 100%; /* Make the image fit within the carousel container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure image fits nicely */
+  
+}
+
+
+@media (max-width: 480px) {
+  .image-gallery {
+    width: 100%; /* Ensure gallery occupies 95% of the screen */
+    height: auto;
+  }
+
+}
+
+
+
+.separator {
+  width:90%; /* Adjust the width of the line */
+  height: 10px; /* Adjust the thickness of the line */
+  background: linear-gradient(to right, #1009de, #f00505); /* Gradient color */
+  margin: 20px auto; /* Center the line */
+  border: none; /* Remove default borders */
+  border-radius: 10px; /* Rounded edges for the line */
+}
