@@ -213,7 +213,7 @@ body {
 }
 /* Sections */
 .section {
-  margin-top: 60px; /* Offset for sticky nav */
+  margin-top: 0px; /* Offset for sticky nav */
   padding: 20px;
   border: 1px solid #ddd;
 }
